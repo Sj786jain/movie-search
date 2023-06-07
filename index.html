@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Search and Recommendation</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Search and Recommendation</h1>
+    
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search movies">
+      <button id="search-button">Search</button>
+    </div>
+
+    <div id="search-results"></div>
+
+    <div id="movie-details"></div>
+
+    <div id="recommendations"></div>
+
+    <div class="create-movie">
+      <h2>Create Movie</h2>
+      <form id="create-movie-form">
+        <input type="text" id="title-input" placeholder="Title" required>
+        <input type="number" id="release-year-input" placeholder="Release Year" required>
+        <input type="text" id="genre-input" placeholder="Genre" required>
+        <textarea id="description-input" placeholder="Description" required></textarea>
+        <button type="submit">Create</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
